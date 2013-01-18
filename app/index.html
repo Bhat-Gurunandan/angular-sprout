@@ -1,28 +1,26 @@
 <!doctype html>
 <html lang="en" ng-app="application">
-<head>
-  <meta charset="utf-8">
-  <title>Angular Seedling</title>
-  <link rel="stylesheet" href="application/application.css"/>
-</head>
-<body>
- 	<nav>
-		<ng-include src="'menu/menu-partial.html'"/>
- 	</nav>
-	
-  <ng-view/>
+	<head>
+		<meta charset="utf-8">
+		<title>Angular Seedling</title>
+		<link rel="stylesheet" href="css/app.css"/>
+		<link rel="stylesheet" href="css/foundation/foundation.min.css"/>
+	</head>
+	<body>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
-  -->
-  <script src="lib/angular.js"></script>
-  <script src="application/application.js"></script>
-  <script src="application/configuration-constants.js"></script>
-  <script src="menu/menu-service.js"></script>
-  <script src="details/details-controller.js"></script>
-  <script src="error/error-controller.js"></script>
-  <script src="menu/menu-controller.js"></script>
-  <script src="menu/menu-item-directive.js"></script>
-  <script src="date-time/to-date-string-filter.js"></script>
-</body>
+		<ng-include src="'includes/include.index.html'"/>
+		
+		<!-- In production use:
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+		-->
+		<script src="lib/angular/angular.js"></script>
+		<script src="js/main/application.js"></script>
+		<script src="js/main/configuration-constants.js"></script>
+		<script src="js/services/service.menu.js"></script>
+		<script src="js/controllers/controller.details.js"></script>
+		<script src="js/controllers/controller.error.js"></script>
+		<script src="js/controllers/controller.menu.js"></script>
+		<script src="js/directives/directive.menu-item.js"></script>
+		<script src="js/filters/filter.to-date-string.js"></script>
+	</body>
 </html>

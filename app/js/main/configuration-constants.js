@@ -6,6 +6,6 @@
 
 Application.Constants.constant('configuration', {
 
-		ITEMS_URL : 'menu/items.json'		
+		ITEMS_URL : 'data/items.json'		
 		
 });

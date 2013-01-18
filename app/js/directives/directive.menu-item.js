@@ -9,7 +9,7 @@ Application.Directives
 	  return {
 	  	restrict : 'E',
 	  	replace : true,
-	  	templateUrl : 'menu/menu-item-template.html',
+	  	templateUrl : 'js/directives/templates/template.menu-item.html',
 	  	scope: {
 	  		id : '=id',
 	  		name : '=name'

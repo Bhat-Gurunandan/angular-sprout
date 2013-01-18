@@ -14,11 +14,14 @@ Application.Filters = angular.module('application.filters', []);
 Application.Directives = angular.module('application.directives', []);
 
 
-angular.module('application', ['application.filters', 'application.services', 'application.directives', 'application.constants', 'application.controllers']).
-  config(['$routeProvider', function($routeProvider) {
+angular.module('application', ['application.filters', 'application.services', 'application.directives', 'application.constants', 'application.controllers'])
+	.config(['$routeProvider', function($routeProvider) {
     
-    $routeProvider.
-      when('/about', {templateUrl: 'about/about-partial.html'}).
-      when('/:id/', {templateUrl: 'details/details-partial.html'}).
-      otherwise({templateUrl: 'error/error-partial.html'});
-  }]);
+		$routeProvider
+			.when('/test', {
+				templateUrl: 'partials/partial.index.html'
+			})
+			.otherwise({
+				templateUrl: 'partials/partial.error.html'
+			});
+	}]);
